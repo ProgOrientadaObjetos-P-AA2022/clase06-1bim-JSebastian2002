@@ -14,6 +14,7 @@ public class Vendedor {
     private double comisionPorAuto;
     
     
+    
     public Vendedor(String n, int e, double sMinimo, int nAutos){
         nombres = n;
         edad = e;
@@ -69,5 +70,20 @@ public class Vendedor {
     
     public double obtenerComisionPorAuto(){
         return comisionPorAuto;
+    }
+     @Override
+    public String toString() {
+        String cadena = "";
+         cadena  = String.format("%sDatos de Vendedor\n"
+                    + "Nombre: %s\n"
+                    + "Edad: %s\n"
+                    + "Salario mínimo: %.2f\n"
+                    + "Número de autos: %d\n"
+                    + "Pago mensual: %.2f\n\n",
+                    cadena,
+                    obtenerNombres(), obtenerEdad(),
+                    obtenerSalarioMinimo(), obtenerNumeroAutos(),
+                    obtenerPagoMensual());
+        return cadena;
     }
 }
