@@ -28,12 +28,12 @@ public class Ejecutor {
         String nombreProfesor;
         String tipoProfesor;
 
+
         // Ingreso de valores por teclado
         System.out.println("Ingrese el nombre del estudiante");
         nombreEstudiante = entrada.nextLine();
         System.out.println("Ingrese el número de calificaciones");
         numerocalificaciones = entrada.nextInt();
-
         entrada.nextLine();
 
         // con el numerocalificaciones se crea el objeto arreglo de
